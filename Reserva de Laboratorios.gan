@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2026-09-07" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3322" locale="es_ES">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd15" name="Notas" width="20" order="-1"/>
         <field id="tpd3" name="Nombre" width="200" order="0"/>
         <field id="tpd4" name="Fecha de inicio" width="75" order="1"/>
         <field id="tpd5" name="Fecha de fin" width="75" order="2"/>
+        <field id="tpd15" name="Notas" width="20" order="3"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
-        <timeline><![CDATA[3,1,0,4,5]]></timeline>
+        <timeline><![CDATA[0,1,3,4,5]]></timeline>
         <option id="color.recent"><![CDATA[#9900cc]]></option>
     </view>
     <view id="resource-table">
@@ -47,9 +47,18 @@
             <depend id="2" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="2" uid="0514756edef7433984cc18f572a471e0" name="Módulo de disponibilidad" meeting="false" start="2026-09-22" duration="2" complete="50" priority="2" expand="true">
+            <notes><![CDATA[WP-3 - Módulo de disponibilidad
+Estado: En progreso
+Avance: 50 %
+Rama: feature/3-modulo-disponibilidad
+Pull Request: https://github.com/jperezh04/GPS_Lab/pull/1
+
+Se inició la documentación e implementación del módulo encargado de consultar la disponibilidad de los laboratorios.]]></notes>
             <depend id="3" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="3" uid="5cd35debc2604d0ca3e32dcbfda50665" name="Módulo de reservas" meeting="false" start="2026-09-24" duration="2" complete="0" priority="2" expand="true">
+            <notes><![CDATA[oiwa
+]]></notes>
             <depend id="4" type="2" difference="0" hardness="Strong"/>
             <depend id="5" type="2" difference="0" hardness="Rubber"/>
         </task>
@@ -63,5 +72,4 @@
     <vacations/>
     <previous/>
     <roles roleset-name="Default"/>
-    <roles roleset-name="SoftwareDevelopment"/>
 </project>
